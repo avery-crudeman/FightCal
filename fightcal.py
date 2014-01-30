@@ -8,10 +8,6 @@ import sys, os
 import time
 
 def postcal():
-	
-    # timestamp
-    print (time.strftime("%H:%M:%S"))
-    print (time.strftime("%m:%d"))
     
     # load config file
     containing_dir = os.path.abspath(os.path.dirname(sys.argv[0]))	
