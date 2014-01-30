@@ -25,7 +25,7 @@ def postcal():
     r.login(cfg_file.get('reddit', 'username'), cfg_file.get('reddit', 'password'))
 	
     # get subreddit
-    subreddit = r.get_subreddit('mmatest')
+    subreddit = r.get_subreddit('XXX')
 
     # Shedog calender URL
     page = requests.get('http://www.sherdog.com/events/')
