@@ -26,11 +26,9 @@ def postcal():
     # Shedog calender URL
     page = requests.get('http://www.sherdog.com/events/')
 
-    # returns data
-    tree = html.fromstring(page.text)
-
-    # creates a list of events (testing):
+    # creates a list of events:
     print 'scraping'
+    tree = html.fromstring(page.text)
     ufc_month = tree.xpath('//*[@id="ufc_tab"]/ul[2]/li/a/span/span[@class="month"]/text()')	
     ufc_day = tree.xpath('//*[@id="ufc_tab"]/ul[2]/li/a/span/span[@class="day"]/text()')
     ufc_event = tree.xpath('//*[@id="ufc_tab"]/ul[2]/li/a/text()[2]')
