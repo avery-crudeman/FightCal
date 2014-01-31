@@ -6,7 +6,6 @@ import fightcal
 while True:
 	today = datetime.today()
 	fightcal.postcal()
-	break
 
-if datetime.today().day == today.day:
-	timecheck.endofdaycheck()
+	if datetime.today().day == today.day:
+		timecheck.endofdaycheck()
