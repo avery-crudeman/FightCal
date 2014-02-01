@@ -1,6 +1,6 @@
 FightCal
 ========
-Modules needed:
+Modules:
 
 PRAW
 
